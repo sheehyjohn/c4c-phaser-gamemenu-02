@@ -16,15 +16,15 @@ class Menu extends Phaser.Scene {
     this.add.text(10, 10, `Please Select a Level`, { font: '25px Arial', fill: '#000000' });
 
     // Add level menu buttons.
-    const itemsPerRow = 3;
+    const itemsPerRow = 4;
     for (let i = 0; i < levels.length; i ++) {
       const unlocked = i <= gameState.maxUnlockedLevel();
       const button = this.add.text(
-        40 + (i % itemsPerRow) * 150, 
-        70 + Math.floor(i / itemsPerRow) * 120, 
+        20 + (i % itemsPerRow) * 100, 
+        75 + Math.floor(i / itemsPerRow) * 65, 
         levels[i].name, 
         {
-          font: '20px Arial',
+          font: '15px Arial',
           fill: '#000000',
         }
       );

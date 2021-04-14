@@ -4,7 +4,7 @@
      "export":
         {
          "format":"json",
-         "target":"level-01-js.json"
+         "target":"level-1.json"
         }
     },
  "height":14,
